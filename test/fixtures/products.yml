@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  minquantity: 1
+  maxquantity: 1
+  price: 9.99
+  isavailable: false
+  providers: one
+  prodlines: one
+
+two:
+  name: MyString
+  description: MyString
+  minquantity: 1
+  maxquantity: 1
+  price: 9.99
+  isavailable: false
+  providers: two
+  prodlines: two

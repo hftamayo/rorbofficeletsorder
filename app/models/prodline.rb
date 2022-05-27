@@ -1,0 +1,2 @@
+class Prodline < ApplicationRecord
+end

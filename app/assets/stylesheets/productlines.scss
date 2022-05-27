@@ -29,4 +29,19 @@ html, body{
 
         }
     }
+    .links{
+        margin-top: 10px;
+        a{
+            color: white;
+            border-radius: $border-radius;
+            font-weight: bold;
+            background-color: rgb(31, 55, 133);
+            margin: 5px;
+            padding: 5px;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
 }

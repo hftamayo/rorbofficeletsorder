@@ -12,9 +12,9 @@
   <tbody>
     <% @productlines.each do |productline| %>
       <tr>
-        <td><%= link_to 'Show', productline %></td>
-        <td><%= link_to 'Edit', edit_productline_path(productline) %></td>
-        <td><%= link_to 'Destroy', productline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="links"><%= link_to 'Show', productline %></td>
+        <td class="links"><%= link_to 'Edit', edit_productline_path(productline) %></td>
+        <td class="links"><%= link_to 'Destroy', productline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Productline', new_productline_path %>
+<span class="links"><%= link_to 'New Productline', new_productline_path %></span>

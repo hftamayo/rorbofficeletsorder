@@ -10,7 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+  <%= form.label :name, "Name" %>
+  <%= form.text_field :name %>
+  <%= form.label :description, "Description" %>
+  <%= form.text_field :description %>
+  <%= form.label :isactive, "Status" %>
+  <%= form.text_field :isactive %>
   <div class="actions">
     <%= form.submit %>
   </div>

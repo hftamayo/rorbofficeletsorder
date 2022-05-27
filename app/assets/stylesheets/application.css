@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body{
+     margin: 0;
+     background-color: #3a3a3a;
+ }
+
+ body *{
+     color: white
+ }
+
+ input {
+     color: black;
+     
+ }

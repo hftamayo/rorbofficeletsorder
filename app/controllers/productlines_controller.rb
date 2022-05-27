@@ -66,6 +66,6 @@ class ProductlinesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def productline_params
-      params.fetch(:productline, {})
+      params.fetch(:productline, {}).permit(:name, :description, :isactive)
     end
 end

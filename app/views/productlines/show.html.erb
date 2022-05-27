@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
-
+<div>
+<span><%= @productline.name %></span>
+<span><%= @productline.description %></span>
+<span><%= @productline.isactive %></span>
+<span><%= @productline.created_at %></span>
+<span><%= @productline.updated_at %></span>
+</div>
 <%= link_to 'Edit', edit_productline_path(@productline) %> |
 <%= link_to 'Back', productlines_path %>

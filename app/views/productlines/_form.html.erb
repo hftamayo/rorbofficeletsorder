@@ -1,0 +1,17 @@
+<%= form_with(model: productline) do |form| %>
+  <% if productline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(productline.errors.count, "error") %> prohibited this productline from being saved:</h2>
+
+      <ul>
+        <% productline.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

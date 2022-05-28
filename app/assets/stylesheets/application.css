@@ -20,10 +20,39 @@
  }
 
  body *{
-     color: white
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 5px;
+     align-items: center;
  }
 
  input {
-     color: black;
-     
+     color: black;   
  }
+
+ h1{
+    font-size: 2.5em;
+}
+.description{
+    background-color: rgba(9, 0, 0, 0.199);
+    padding: 2em;
+    font-size: 2em;
+    max-width: 600px;
+}
+.meta *{
+    display: flex;
+    background-color: yellow;
+}
+.links *{
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(31, 55, 133);
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}

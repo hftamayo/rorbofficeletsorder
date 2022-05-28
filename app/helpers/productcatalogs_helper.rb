@@ -1,0 +1,2 @@
+module ProductcatalogsHelper
+end

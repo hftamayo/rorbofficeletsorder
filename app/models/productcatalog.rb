@@ -1,0 +1,2 @@
+class Productcatalog < ApplicationRecord
+end

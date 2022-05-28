@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  string: MyString
+  description: MyString
+  minquality: 1
+  maxquantity: 1
+  ‘price: 
+  ‘price: 
+  isavailable: false
+  Prodprovider: MyString
+  references: MyString
+  Prodlines: MyString
+  references: MyString
+
+two:
+  name: MyString
+  string: MyString
+  description: MyString
+  minquality: 1
+  maxquantity: 1
+  ‘price: 
+  ‘price: 
+  isavailable: false
+  Prodprovider: MyString
+  references: MyString
+  Prodlines: MyString
+  references: MyString

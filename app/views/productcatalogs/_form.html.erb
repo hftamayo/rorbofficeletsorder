@@ -1,0 +1,77 @@
+<%= form_with(model: productcatalog) do |form| %>
+  <% if productcatalog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(productcatalog.errors.count, "error") %> prohibited this productcatalog from being saved:</h2>
+
+      <ul>
+        <% productcatalog.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :minquality %>
+    <%= form.number_field :minquality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :maxquantity %>
+    <%= form.number_field :maxquantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :‘price %>
+    <%= form.text_field :‘price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :‘price %>
+    <%= form.text_field :‘price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isavailable %>
+    <%= form.check_box :isavailable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Prodprovider %>
+    <%= form.text_field :Prodprovider %>
+  </div>
+
+  <div class="field">
+    <%= form.label :references %>
+    <%= form.text_field :references %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Prodlines %>
+    <%= form.text_field :Prodlines %>
+  </div>
+
+  <div class="field">
+    <%= form.label :references %>
+    <%= form.text_field :references %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

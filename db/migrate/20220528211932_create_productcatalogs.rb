@@ -6,14 +6,10 @@ class CreateProductcatalogs < ActiveRecord::Migration[6.1]
       t.string :description
       t.integer :minquality
       t.integer :maxquantity
-      t.decimal10’ :‘price
-      t.decimal2’ :‘price
+      t.decimal :price
       t.boolean :isavailable
-      t.string :Prodprovider
-      t.string :references
-      t.string :Prodlines
-      t.string :references
-
+      t.references :prodproviders, null: false, foreign_key: true
+      t.references :prodlines, null: false, foreign_key: true
       t.timestamps
     end
   end

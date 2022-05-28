@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_28_202259) do
+ActiveRecord::Schema.define(version: 2022_05_28_211932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,22 @@ ActiveRecord::Schema.define(version: 2022_05_28_202259) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "productcatalogs", force: :cascade do |t|
+    t.string "name"
+    t.string "string"
+    t.string "description"
+    t.integer "minquality"
+    t.integer "maxquantity"
+    t.decimal "price"
+    t.boolean "isavailable"
+    t.bigint "prodproviders_id", null: false
+    t.bigint "prodlines_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["prodlines_id"], name: "index_productcatalogs_on_prodlines_id"
+    t.index ["prodproviders_id"], name: "index_productcatalogs_on_prodproviders_id"
+  end
+
   create_table "productlines", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -95,6 +111,8 @@ ActiveRecord::Schema.define(version: 2022_05_28_202259) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "productcatalogs", "prodlines", column: "prodlines_id"
+  add_foreign_key "productcatalogs", "prodproviders", column: "prodproviders_id"
   add_foreign_key "products", "prodlines", column: "prodlines_id"
   add_foreign_key "products", "providers", column: "providers_id"
 end

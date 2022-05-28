@@ -8,7 +8,7 @@ class ProductlinesController < ApplicationController
 
   # GET /productlines/1 or /productlines/1.json
   def show
-    render "index"
+    #render "index"
   end
 
   # GET /productlines/new

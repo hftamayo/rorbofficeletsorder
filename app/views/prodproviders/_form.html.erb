@@ -1,0 +1,32 @@
+<%= form_with(model: prodprovider) do |form| %>
+  <% if prodprovider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prodprovider.errors.count, "error") %> prohibited this prodprovider from being saved:</h2>
+
+      <ul>
+        <% prodprovider.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contactname %>
+    <%= form.text_field :contactname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isactive %>
+    <%= form.check_box :isactive %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

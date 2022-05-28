@@ -1,0 +1,2 @@
+class Prodprovider < ApplicationRecord
+end

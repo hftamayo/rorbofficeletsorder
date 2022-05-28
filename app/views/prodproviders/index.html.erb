@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prodproviders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contactname</th>
+      <th>Isactive</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prodproviders.each do |prodprovider| %>
+      <tr>
+        <td><%= prodprovider.name %></td>
+        <td><%= prodprovider.contactname %></td>
+        <td><%= prodprovider.isactive %></td>
+        <td><%= link_to 'Show', prodprovider %></td>
+        <td><%= link_to 'Edit', edit_prodprovider_path(prodprovider) %></td>
+        <td><%= link_to 'Destroy', prodprovider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prodprovider', new_prodprovider_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @prodprovider.name %>
+</p>
+
+<p>
+  <strong>Contactname:</strong>
+  <%= @prodprovider.contactname %>
+</p>
+
+<p>
+  <strong>Isactive:</strong>
+  <%= @prodprovider.isactive %>
+</p>
+
+<%= link_to 'Edit', edit_prodprovider_path(@prodprovider) %> |
+<%= link_to 'Back', prodproviders_path %>

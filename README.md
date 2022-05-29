@@ -15,11 +15,10 @@ It is based on the model of BackOffice of Restaurant Point Of Sale, in the first
 * CRUD developed using scaffolding otion
 
 ### Images ###
-* Read available products from Firebase
-* Add a single product to the shopping cart
-* Add a product with more than one item
-* Review the shopping cart and update/remove items
-* Add Order's details.
+* ![Product Lines 01](./repoimg/ror_poc_crud01.png?raw=true "Product Lines part1")
+*  ![Product Lines 02](./repoimg/ror_poc_crud02.png?raw=true "Product Lines part2")
+*  ![Product Lines 03](./repoimg/ror_poc_crud03.png?raw=true "Product Lines part3")
+*  ![Product Lines 04](./repoimg/ror_poc_crud04.png?raw=true "Providers part1")
 
 ### Last Update: ###
 05-28-2022 by hftamayo

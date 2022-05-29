@@ -1,24 +1,25 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Ruby on Rails CRUD Proof of Concept #
 
-Things you may want to cover:
+This repo is based on a very basic proof of concept of three different CRUDS built on Ruby on Rails
 
-* Ruby version
+## Concept ##
+It is based on the model of BackOffice of Restaurant Point Of Sale, in the first version the available models are: Product Lines, Product Providers and Product Catalog.
 
-* System dependencies
+## Version 1 specs ##
 
-* Configuration
+### Technical Stack ###
+* Ruby: 2.7.4p191
+* Rails: 6.1.6
+* DMBS: PostgreSQL
+* CRUD developed using scaffolding otion
 
-* Database creation
+### Images ###
+* Read available products from Firebase
+* Add a single product to the shopping cart
+* Add a product with more than one item
+* Review the shopping cart and update/remove items
+* Add Order's details.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Last Update: ###
+05-28-2022 by hftamayo

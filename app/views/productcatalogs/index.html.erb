@@ -1,23 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Productcatalogs</h1>
+<h1>Product Catalog</h1>
 
-<table>
+<div class="container"> 
+  <div class="links"><%= link_to 'New Item', new_productcatalog_path %></div>
+  <div class="links"><%= link_to 'Back to Main', root_path %></div>
+</div>
+
+<table id="tabledata">
   <thead>
     <tr>
       <th>Name</th>
-      <th>String</th>
       <th>Description</th>
-      <th>Minquality</th>
-      <th>Maxquantity</th>
-      <th>‘price</th>
-      <th>‘price</th>
       <th>Isavailable</th>
-      <th>Prodprovider</th>
-      <th>References</th>
-      <th>Prodlines</th>
-      <th>References</th>
-      <th colspan="3"></th>
+      <th colspan="3">Operations</th>
     </tr>
   </thead>
 
@@ -25,25 +21,13 @@
     <% @productcatalogs.each do |productcatalog| %>
       <tr>
         <td><%= productcatalog.name %></td>
-        <td><%= productcatalog.string %></td>
         <td><%= productcatalog.description %></td>
-        <td><%= productcatalog.minquality %></td>
-        <td><%= productcatalog.maxquantity %></td>
-        <td><%= productcatalog.‘price %></td>
-        <td><%= productcatalog.‘price %></td>
         <td><%= productcatalog.isavailable %></td>
-        <td><%= productcatalog.Prodprovider %></td>
-        <td><%= productcatalog.references %></td>
-        <td><%= productcatalog.Prodlines %></td>
-        <td><%= productcatalog.references %></td>
-        <td><%= link_to 'Show', productcatalog %></td>
-        <td><%= link_to 'Edit', edit_productcatalog_path(productcatalog) %></td>
-        <td><%= link_to 'Destroy', productcatalog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="links"><%= link_to 'Show', productcatalog %></td>
+        <td class="links"><%= link_to 'Edit', edit_productcatalog_path(productcatalog) %></td>
+        <td class="links"><%= link_to 'Destroy', productcatalog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Productcatalog', new_productcatalog_path %>

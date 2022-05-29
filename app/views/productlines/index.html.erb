@@ -2,6 +2,11 @@
 
 <h1>Product lines Catalog</h1>
 
+<div class="container"> 
+  <div class="links"><%= link_to 'New Item', new_productline_path %></div>
+  <div class="links"><%= link_to 'Back to Main', root_path %></div>
+</div>
+
 <table id="tabledata">
   <thead>
     <tr>
@@ -23,5 +28,3 @@
     <% end %>
   </tbody>
 </table>
-
-<p class="links"><%= link_to 'New Item', new_productline_path %></p>

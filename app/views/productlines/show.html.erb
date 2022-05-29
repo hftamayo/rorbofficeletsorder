@@ -1,10 +1,12 @@
 <p id="notice"><%= notice %></p>
 <div>
-<span>Product Name: <%= @productline.name %></span>
-<span>Description:<%= @productline.description %></span>
-<span>Available?<%= @productline.isactive %></span>
-<span>Created at: <%= @productline.created_at %></span>
-<span>Updated at:<%= @productline.updated_at %></span>
+<p><strong>Product Name:</strong> <%= @productline.name %></p>
+<p><strong>Description:</strong><%= @productline.description %></p>
+<p><strong>Available?:</strong><%= @productline.isactive %></p>
+<p><strong>Created at:</strong> <%= @productline.created_at %></p>
+<p><strong>Updated at:</strong><%= @productline.updated_at %></p>
 </div>
-<%= link_to 'Edit', edit_productline_path(@productline) %> |
-<%= link_to 'Back', productlines_path %>
+<div class="container">
+<div class="links"><%= link_to 'Edit', edit_productline_path(@productline) %></div>
+<div class="links"><%= link_to 'Back', productlines_path %></div>
+</div>

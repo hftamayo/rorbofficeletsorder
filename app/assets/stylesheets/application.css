@@ -50,6 +50,12 @@
     display: flex;
     background-color: yellow;
 }
+.container{
+    text-align: center;
+    display: flex;
+}
+
+
 .links *{
     margin-top: 10px;
     color: white;
